@@ -6,7 +6,7 @@ import { skills, links } from "../../data/Data";
 
 export default function AboutSection() {
   return (
-    <section className="section2 min-h-[90vh] p-8 pb-12 grid gap-6 md:grid-cols-3 content-center scroll-mt-[10vh] snap-start">
+    <section className="section2 min-h-[90vh] p-8 grid gap-6 md:grid-cols-3 content-center scroll-mt-[10vh] snap-start">
       <hgroup className="md:col-span-2 flex flex-col items-center">
         <SectionTitle title="À propos" color="bg-green-700" className="-rotate-6 lg:place-self-start " />
         <h2 className="p-4 font-Bangers text-4xl sm:text-5xl md:text-7xl text-center lg:text-left fade">
@@ -23,7 +23,7 @@ export default function AboutSection() {
         ))}
       </div>
 
-      <div className="flex flex-wrap gap-4 py-4 justify-center items-center md:col-span-3 fade">
+      <div className="flex flex-wrap gap-4 py-4 justify-center items-center md:col-span-3 pb-44 md:pb-0 fade">
         {links.map((link) => (
           <Link key={link.text} {...link} />
         ))}

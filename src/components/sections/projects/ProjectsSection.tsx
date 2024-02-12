@@ -40,7 +40,7 @@ export default function ProjectsSection({ onClick }: ProjectsSectionProps) {
                 {project.title}
               </p>
               {hovered &&(
-                <span className="h-full w-full bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 absolute">
+                <span className="h-full w-full bg-white-100 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 absolute">
 
                 </span>
               )
