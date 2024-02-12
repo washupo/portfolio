@@ -6,9 +6,9 @@ export const router = createBrowserRouter([
     {
       path : '/',
       element : <App />,
-      errorElement : <h1>404</h1>,
+      errorElement : <h1>404!</h1>,
       children : [
-        { path: "/", element: <MainPage /> }
+        { path: "/portfolio", element: <MainPage /> }
       ]
     }
   ]);

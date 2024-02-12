@@ -1,7 +1,18 @@
+// PumpkinClicker
 import pumpkinClickerBanner from '../../assets/projects/pumpkinClicker/Banner.png';
 import pumpkinClicker1 from '../../assets/projects/pumpkinClicker/Screenshot2.png';
 import pumpkinClicker2 from '../../assets/projects/pumpkinClicker/Responsive.jpg';
 import pumpkinClicker3 from '../../assets/projects/pumpkinClicker/Screenshot1.png';
+import miniature from '../../assets/projects/pumpkinClicker/PumpkinClicker.webp'
+
+// Yumbites
+import miniature2 from '../../assets/projects/YumBites/YumBitesBanner.webp'
+import YumBites1 from '../../assets/projects/YumBites/Screenshot1.webp'
+import YumBites2 from '../../assets/projects/YumBites/Screenshot2.webp'
+import YumBites3 from '../../assets/projects/YumBites/responsive.webp'
+import YumBitesBanner from '../../assets/projects/YumBites/Banner.webp'
+
+
 
 import HTML from '../../assets/about/HTML.webp';
 import CSS from '../../assets/about/CSS.webp';
@@ -18,8 +29,28 @@ import cv from '../../assets/about/Doc.webp';
 export const projects = [
     {
         id: 1,
+        title: 'YumBites',
+        backgroundImage: miniature2,
+        url: 'https://washupo.github.io/YumBites/',
+        description: (
+            <>
+            YumBites est la recréation pixel perfect de la&nbsp;  
+            <a href='https://www.behance.net/gallery/184606647/YumBites-web-design' target='_blank' className='italic underline'> 
+            maquette d'un restaurant fictif  découverte sur Behance 
+            </a>.  
+            Ce projet est un véritable défi de précision, chaque élément étant intégré pour refléter fidèlement la vision originale de la designer.En plus de m'initier au développement React, ce projet me permet d'affiner ma capacité à transformer une conception statique en une expérience interactive et engageante. D'autres fonctionnalités telles que la réservation, le formulaire de contact et des animations seront ajoutées durant les prochaines semaines.
+            </>
+            ),
+        technos: 'HTML5, CSS3, React, Javascript',
+        banner: YumBitesBanner,
+        img1: YumBites1,
+        img2: YumBites2,
+        img3: YumBites3,
+    },
+    {
+        id: 2,
         title: 'Pumpkin Clicker',
-        backgroundImage: '/src/assets/projects/pumpkinClicker/PumpkinClicker.webp',
+        backgroundImage: miniature,
         url: 'https://washupo.github.io/Pumpkin-clicker/#',
         description: "Cookie Clicker est un projet réalisé en équipe avec pour objectif d'apprendre JavaScript. Inspiré du célèbre jeu original, notre version se veut à la fois minimaliste et esthétique, offrant ainsi une expérience utilisateur conviviale. Ce projet nous a permis d'explorer les concepts fondamentaux de JavaScript tout en mettant en pratique nos compétences en conception pour créer une interface attrayante et facile à utiliser.",
         technos: 'HTML5, CSS3, Javascript',
@@ -28,18 +59,6 @@ export const projects = [
         img2: pumpkinClicker2,
         img3: pumpkinClicker3,
     },
-    {
-        id: 2,
-        title: 'Project 2',
-        backgroundImage: 'https://picsum.photos/200/300',
-        url: 'https://www.google.com',
-        description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut assumenda officia ut accusamus quam, magni harum molestias eum ipsam laboriosam esse porro asperiores! Soluta esse reiciendis laudantium voluptas tempore deleniti.',
-        technos: 'React',
-        banner: pumpkinClickerBanner,
-        img1: 'https://images.unsplash.com/photo-1505533321630-975218a5f66f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D',
-        img2: 'https://images.unsplash.com/photo-1505533321630-975218a5f66f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D',
-        img3: 'https://images.unsplash.com/photo-1505533321630-975218a5f66f?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnJlZSUyMGltYWdlc3xlbnwwfHwwfHx8MA%3D%3D',
-    }
 ];
 
 export const skills = [

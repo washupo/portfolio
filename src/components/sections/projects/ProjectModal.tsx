@@ -4,7 +4,7 @@ export interface Project {
     title: string;
     backgroundImage: string;
     url: string;
-    description: string;
+    description: string | React.ReactNode;
     technos: string;
     banner: string;
     img1: string;
