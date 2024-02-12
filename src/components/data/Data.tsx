@@ -13,7 +13,7 @@ import YumBites3 from '../../assets/projects/YumBites/responsive.webp'
 import YumBitesBanner from '../../assets/projects/YumBites/Banner.webp'
 
 
-
+// Skills level
 import HTML from '../../assets/about/HTML.webp';
 import CSS from '../../assets/about/CSS.webp';
 import JS from '../../assets/about/JS.webp';
@@ -26,7 +26,9 @@ import linkedin from '../../assets/about/LinkedIn.webp';
 import github from '../../assets/about/Github.svg';
 import cv from '../../assets/about/Doc.webp';
 
-
+// section
+import bubble1 from'../../assets/buttons/bubble1.svg'
+import bubble2 from'../../assets/buttons/bubble2.svg'
 
 export const projects = [
     {
@@ -77,4 +79,10 @@ export const links = [
     { text: 'Github', color: 'bg-green-700', img: github, url: 'https://github.com/washupo', target: '_blank'},
     { text: 'Linkedin', color: 'bg-green-700', img: linkedin, url: 'https://www.linkedin.com/in/paulinewashukenyi/', target: '_blank'},
     { text: 'Télécharger CV', color: 'bg-green-700', img: cv, url: 'src/assets/download/CV PaulineWashukenyi.pdf', download:'CV_PaulineWashukenyi.pdf'}
+  ]
+
+export const sections = [
+    { id: 1, label: 'À propos', image: bubble1, rotation: "rotate absolute -right-10" },
+    { id: 2, label: 'Portfolio', image: bubble2, rotation: "rotate-[20deg] absolute -top-10 md-top-14 -left-14 md-left-20" },
+    { id: 3, label: 'Contact' }
   ]

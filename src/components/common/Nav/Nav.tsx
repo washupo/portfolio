@@ -1,11 +1,9 @@
 //Nav.tsx
+import { Sections } from "../../../types/types";
 export interface NavProps {
     NavClassName: string;
     UlClassName: string;
-    sections: { 
-      id: number, 
-      label: string 
-    }[];
+    sections: Sections[];
     handleScroll: (index: number) => void;
     handleClose: () => void;
   }

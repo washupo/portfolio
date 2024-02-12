@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { Logo } from "../Logo";
 import { Nav } from "./Nav";
+import { sections } from "../../data/Data";
 
 export interface NavBarProps {
   handleScroll: (index: number) => void;
@@ -17,12 +18,6 @@ export default function NavBar({ handleScroll }: NavBarProps) {
   const handleClose = () => {
     setOpen(false);
   };
-
-  const sections = [
-    { id: 1, label: 'À propos' },
-    { id: 2, label: 'Portfolio' },
-    { id: 3, label: 'Contact' }
-  ]
 
   return (
     <header className={`sticky top-0 flex flex-col uppercase font-Patrick font-bold text-xl z-50`}>

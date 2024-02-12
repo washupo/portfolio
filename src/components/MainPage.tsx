@@ -1,5 +1,5 @@
 // MainPage.tsx
-import HeroSection from "./sections/HeroSection";
+import HeroSection from "./sections/heroSection/HeroSection";
 import AboutSection from "./sections/about/AboutSection";
 import ProjectsSection from "./sections/projects/ProjectsSection";
 import ContactSection from "./sections/ContactSection";
@@ -14,7 +14,7 @@ export function MainPage() {
 
     return (
         <main className={`main p-0 m-0 w-screen h-screen ${open ? 'overflow-hidden' : 'overflow-y-scroll'} snap-y snap-mandatory`}>
-            <HeroSection />
+            <HeroSection handleScroll={useScrollTo} />
             <Navbar handleScroll={useScrollTo} />
             <AboutSection />
             <ProjectsSection onClick={handleOpen}  />
