@@ -9,9 +9,9 @@ gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 // Gestion ScrollTo pour déplacer le défilement vers une section spécifique
 export const useScrollTo = ((index: number) => {
     gsap.to('.main', {
-        duration: 1,
         scrollTo: {
             y: ".section" + (index + 1),
+            offsetY:70,
         },
     });
 })
