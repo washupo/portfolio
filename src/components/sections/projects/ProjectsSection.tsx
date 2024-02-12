@@ -13,10 +13,10 @@ export interface ProjectsSectionProps {
 export default function ProjectsSection({ onClick }: ProjectsSectionProps) {
   const { open, handleOpen } = useOpen();
   const [project, setProject] = useState({} as Project);
-  const [hovered, setHovered] = useState(false);
+  const [hovered, setHovered] = useState<number | null>(null);
 
-  const handleMouseEnter = () => setHovered(true);
-  const handleMouseLeave = () => setHovered(false);
+  const handleMouseEnter = (projectId: number) => setHovered(projectId);
+  const handleMouseLeave = () => setHovered(null);
 
   return (
     <>
@@ -30,12 +30,12 @@ export default function ProjectsSection({ onClick }: ProjectsSectionProps) {
               className={`bg-cover bg-center flex-1 rounded-lg cursor-pointer relative hover:flex-[5] transition-all ease-in-out flex overflow-hidden ${hovered ? "items-center justify-center" : ""}`}
               style={{ backgroundImage: `url(${project.backgroundImage})` }}
               onClick={() => { onClick(); handleOpen(); setProject(project) }}
-              onMouseEnter={handleMouseEnter}
+              onMouseEnter={() => handleMouseEnter(project.id)}
               onMouseLeave={handleMouseLeave}
 
             >
               <p 
-              className={`font-Bangers py-2 px-4 absolute text-3xl bg-slate-100 rounded-sm border-black border-2 ${hovered ? "z-50 text-9xl" : " bottom-2 left-2"}`}
+              className={`font-Bangers py-2 px-4 absolute text-3xl bg-slate-100 rounded-sm border-black border-2 ${hovered === project.id ? "z-50 text-7xl p-6" : " bottom-2 left-2"}`}
               >
                 {project.title}
               </p>
