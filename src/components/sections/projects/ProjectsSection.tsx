@@ -20,9 +20,9 @@ export default function ProjectsSection({ onClick }: ProjectsSectionProps) {
 
   return (
     <>
-      <section className="section3 h-[90vh] p-4 pt-6 flex flex-col gap-6 justify-center scroll-mt-[10vh] snap-start overflow-auto">
+      <section className="section3 h-[90vh] p-4 pt-6 flex flex-col gap-6 justify-center scroll-mt-[10vh] snap-start overflow-hidden">
         <SectionTitle title="Portfolio" color="bg-pink-700" className="place-self-center" />
-        <div className="flex flex-col md:flex-row gap-4 h-full overflow-hidden slide">
+        <div className="flex flex-col md:flex-row gap-4 h-full slide">
 
           {projects.map((project) => (
             <article
