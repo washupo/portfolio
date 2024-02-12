@@ -26,6 +26,8 @@ import linkedin from '../../assets/about/LinkedIn.webp';
 import github from '../../assets/about/Github.svg';
 import cv from '../../assets/about/Doc.webp';
 
+
+
 export const projects = [
     {
         id: 1,
@@ -74,5 +76,5 @@ export const skills = [
 export const links = [
     { text: 'Github', color: 'bg-green-700', img: github, url: 'https://github.com/washupo', target: '_blank'},
     { text: 'Linkedin', color: 'bg-green-700', img: linkedin, url: 'https://www.linkedin.com/in/paulinewashukenyi/', target: '_blank'},
-    { text: 'Télécharger CV', color: 'bg-green-700', img: cv, url: '../../../assets/download/CV PaulineWashukenyi.pdf', download:'CV_PaulineWashukenyi.pdf'}
+    { text: 'Télécharger CV', color: 'bg-green-700', img: cv, url: 'src/assets/download/CV PaulineWashukenyi.pdf', download:'CV_PaulineWashukenyi.pdf'}
   ]
